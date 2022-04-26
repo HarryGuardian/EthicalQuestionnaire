@@ -1,8 +1,4 @@
-tml, body {
-    overflow-x: hidden;
-    height: 100%;
-}
-body {
+html, body {
     background: #F1F5F2;
     padding: 0;
     margin: 0;

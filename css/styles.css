@@ -1,8 +1,4 @@
 html, body {
-    overflow-x: hidden;
-    height: 100%;
-}
-body {
     background: #F1F5F2;
     padding: 0;
     margin: 0;
@@ -30,13 +26,6 @@ h1 {
   color: white;
   text-align: center;
   width: 100%;
-  height: 0;
-  padding: 0 0 40%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #sidebarMenu {
@@ -141,4 +130,67 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
+}
+
+.area {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+.left {
+  left: 0;
+  width: 45%;
+  padding: 7em 25em 3em 20em;
+}
+
+.right {
+  right: 0;
+  padding: 7em 0em 3em 2em;
+  border-left: 1px solid grey;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 1390px) {
+  .area {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    float: top;
+    width: 367px;
+  }
+
+  .right {
+    float: bottom;
+    width: 367px;
+  }
+}
+
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #355834;
+  color: white;
+}
+
+button:hover {
+  background-color: #C2A878;
+  color: black;
+}
+
+p {
+  width: 100%;
 }

@@ -134,3 +134,69 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transform: rotate(-135deg);
     margin-top: -9px;
 }
+
+row {
+	display: flex;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1em
+}
+
+.page {
+	height:100%;
+	background-color: inherit;
+
+}
+
+/* creates the sizingfor the columns */
+.column {
+	float: left;
+	width: 25%;
+  padding: 20px
+}
+
+.profile {
+  width: 20%;
+}
+
+.text {
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* turns the columns into single file when in mobile mode */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+p {
+	font-size: 1.2em
+}
+
+/* all the card specific styling */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}

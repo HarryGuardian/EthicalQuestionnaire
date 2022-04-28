@@ -1,3 +1,4 @@
+/* Accordian Scripts */
 var acc = document.getElementsByClassName("accordion");
 var i;
 

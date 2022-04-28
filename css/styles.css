@@ -1,3 +1,4 @@
+/* Main styling */
 html, body {
     background: #F1F5F2;
     padding: 0;
@@ -5,10 +6,12 @@ html, body {
     font-family: 'Georgia', serif;
 }
 
+/* Font */
 h1,h2,h3,h4,h5 {
   font-family: "Georgia", serif
 }
 
+/* Navigational menu styling */
 .header {
     display: block;
     margin: 0 auto;
@@ -86,6 +89,8 @@ input[type=checkbox] {
     height: 22px;
     width: 22px;
 }
+
+/* Animated X Styling */
 .spinner {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -132,8 +137,9 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     margin-top: -9px;
 }
 
+/* Page layout */
 .area {
-  height: 100%;
+  height: 1400px;
   width: 30%;
   position: fixed;
   z-index: 1;
@@ -162,6 +168,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   text-align: center;
 }
 
+/* Mobile friendly styling */
 @media only screen and (max-device-width: 1390px) {
   .area {
     display: flex;
@@ -178,6 +185,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   }
 }
 
+/* Button Styling */
 button {
   text-decoration: none;
   display: inline-block;
@@ -193,4 +201,17 @@ button:hover {
 
 p {
   width: 100%;
+}
+
+/* Footer styling */
+footer{
+  margin-top: auto;
+  background-color: #355834;
+  padding: 10px 0px 0px 0px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
 }
